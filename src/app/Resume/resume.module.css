@@ -1,0 +1,125 @@
+
+  .section{
+    background-color: #1b263b;
+  }
+  .section_heading {
+    color: azure;
+    margin-bottom: 10px;
+  }
+  .resume {
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+  
+    box-shadow: 0 0 10px #000000;
+    transition: box-shadow 0.3s;
+  }
+  .resume:hover {
+    box-shadow: 0 0 15px #000000;
+  }
+  .resume_heading {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 38px;
+    padding: 15px 0px;
+    width: 100%;
+    color:azure;
+  }
+  
+  .left_section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+
+  }
+  
+  .profile_picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px #000000;
+    transition: 0.3s;
+  }
+  .profile_picture:hover {
+    box-shadow: 0 0 15px #000000;
+  }
+  .strong {
+    color: azure;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .name{
+    margin-bottom: 10px;
+  }
+  .contact_info,
+  .academic_info {
+    text-align: center;
+    padding: 10px;
+    color: azure;
+    line-height: 26px;
+  }
+  .download_button {
+    background-color: #1879df;
+    padding: 10px 20px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 20px black;
+    transition: 0.3s;
+    color: azure;
+  }
+  .download_button:hover {
+    background-color: #053f7d;
+    box-shadow: 0 0 15px #000000;
+  }
+  
+  .right_section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .experience_item,
+  .project_item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000000;
+    transition: box-shadow 0.3s;
+    color: rgb(115, 118, 118);
+    line-height: 22px;
+  
+  
+  }
+  .experience_item:hover {
+    box-shadow: 0 0 15px #000000;
+  }
+  .project_item:hover {
+    box-shadow: 0 0 15px #000000;
+  }
+  
+  .a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  @media (max-width: 550px) { 
+    .resume {
+      display: block;
+    }
+  }
+  

@@ -1,0 +1,22 @@
+[
+    {"title":"e_mentor-online portal for mentorship",
+    "description":"Developing an robust MERN stack app where mentor and mentees can communicate in an enhanced way. Providing the users an in-build chat system,chat bot (openai) and video caling system that can serves you a better environment. and also performance analyzer where mentor can easily observe their mentees progress and health with better UI.",
+    "img":"/images/e-mentor.png"
+
+    },
+    {"title":"Video Calling App",
+    "description":"Building an MERN stack video calling app where users can enjoy group or one to one calling with in-build chat system also where user can store their notes in database along with their histories of calls.",
+    "img":"/images/video_conf.png"
+
+    },
+    {"title":"Chat_PoP-Real time chat application",
+    "description":"creating a real time MERN stack chat application. The main feature of this app will be that it will provide a better way to store the chat in database. Where the authorised user can export and import the chats in better json readable format.",
+    "img":"/images/chat_app1.png"
+
+    },
+    {"title":"Erail-Online railway ticket booking system"
+,    "description":"By using HTML5, CSS3 (bootstrap), JAVASCRIPT and PHP, MySql i have builded a system where user can easily book there tickets by selectig there source and destination (in India) and availability of trains. User can also check there recent history of there booking.",
+    "img":"/images/rail.png"
+
+    }
+]
