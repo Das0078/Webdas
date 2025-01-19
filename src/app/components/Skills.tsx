@@ -4,7 +4,7 @@ import styles from '../page.module.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-const Skills = () => {
+const Skills = ({color}:any) => {
   // const [hovered,setHovered]=useState(false)
 
   // const add_class=hovered?styles.big:"";
@@ -16,7 +16,7 @@ const Skills = () => {
   })
   return (
     <>
-    <div className={styles.container_skills} id='skills' data-aos="fade-left">
+    <div className={styles.container_skills} id='skills' data-aos="fade-left" data-theme={color.theme}>
 
     
       <div className={styles.con}>

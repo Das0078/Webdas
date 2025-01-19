@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 import Link from 'next/link';
 
 
-const Navbar = () => {
+const Navbar = ({color}:any) => {
   const [isHomeIconHovered, setIsHomeIconHovered] = useState(false);
   const [isProjectIconHovered, setIsProjectIconHovered] = useState(false);
   const [isSkillsIconHovered, setIsSkillsIconHovered] = useState(false);
@@ -23,17 +23,17 @@ const Navbar = () => {
   })
   return (
     <>
-    <nav className={styles.navbar} data-aos="fade-right">
-    <Link href={'#home'}><AiFillHome className={styles.home} size={28} color={isHomeIconHovered ? '#748cab' : 'azure'}
+    <nav className={styles.navbar} data-aos="fade-right" data-theme={color.theme}>
+    <Link href={'#home'}><AiFillHome className={styles.home} size={28} color={isHomeIconHovered ? '#748cab' : '#415a77'}
           onMouseEnter={() => setIsHomeIconHovered(true)}
           onMouseLeave={() => setIsHomeIconHovered(false)} /></Link>
-<Link href={'#project'}><RiProjectorFill className={styles.project} size={28}  color={isProjectIconHovered ? '#748cab' : 'azure'}
+<Link href={'#project'}><RiProjectorFill className={styles.project} size={28}  color={isProjectIconHovered ? '#748cab' : '#415a77'}
           onMouseEnter={() => setIsProjectIconHovered(true)}
           onMouseLeave={() => setIsProjectIconHovered(false)}/> </Link>
-<Link href={'#skills'}><BsFillBookFill className={styles.skills} size={28} color={isSkillsIconHovered ? '#748cab' : 'azure'}
+<Link href={'#skills'}><BsFillBookFill className={styles.skills} size={28} color={isSkillsIconHovered ? '#748cab' : '#415a77'}
           onMouseEnter={() => setIsSkillsIconHovered(true)}
           onMouseLeave={() => setIsSkillsIconHovered(false)} /></Link>
-<Link href={'#contacts'}><BiSolidContact className={styles.contact} size={28} color={isContactIconHovered ? '#748cab' : 'azure'}
+<Link href={'#contacts'}><BiSolidContact className={styles.contact} size={28} color={isContactIconHovered ? '#748cab' : '#415a77'}
           onMouseEnter={() => setIsContactIconHovered(true)}
           onMouseLeave={() => setIsContactIconHovered(false)} /></Link>
 

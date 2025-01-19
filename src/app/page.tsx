@@ -17,11 +17,14 @@ import { useState,useEffect } from 'react'
 
 
 
-const page = () => {
+
+const Page = () => {
  const [toggle,setToggle]=useState("Home")
  const [weather,setWeather]=useState({temp:"",main:""})
  const [loader,setLoader]=useState(false);
+ const[theme,setTheme]=useState("")
 
+//  const [darkMode,setLightMode]=useState(true);
 
 
 
@@ -77,17 +80,18 @@ fetchData()
  />
  </section>
    :
-   <section>
-    <Top weather={weather} />
-    <Navbar />
+ 
+   <section  data-theme={theme}>
+    <Top weather={weather} color={{theme,setTheme}}/>
+    <Navbar color={{theme,setTheme}}/>
     <div className={styles.homeContainer}>
-      <Home />
-     <Project />
-    <Skills />
-    <Contact />
+      <Home color={{theme,setTheme}}/>
+     <Project color={{theme,setTheme}}/>
+    <Skills color={{theme,setTheme}}/>
+    <Contact color={{theme,setTheme}}/>
     </div>
    </section>
-
+   
 
    }
 
@@ -98,4 +102,4 @@ fetchData()
   )
 }
 
-export default page
+export default Page

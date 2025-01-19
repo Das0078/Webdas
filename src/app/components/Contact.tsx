@@ -13,7 +13,7 @@ import 'aos/dist/aos.css';
 
 
 
-const Contact = () => {
+const Contact = ({color}:any) => {
   const [githubHover,setGithubHover]=useState(false);
   const [linkedHover,setLinkedHover]=useState(false);
   const [xHover,setXHover]=useState(false);
@@ -26,7 +26,7 @@ useEffect(()=>{
 })
   return (
     <>
-    <div className={styles.container_contact} id='contacts' data-aos="fade-right">
+    <div className={styles.container_contact} id='contacts' data-aos="fade-right" data-theme={color.theme}>
         
               <Link href={'https://github.com/Das0078'} data-aos="fade-right" target='_blank'><VscGithubInverted className={styles.con_github} size={githubHover?80:60} color={githubHover?'#343a40':'azure'} 
                onMouseEnter={()=>setGithubHover(true)} onMouseLeave={()=>setGithubHover(false)}/></Link> 
